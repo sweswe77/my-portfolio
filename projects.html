@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Swe Swe Aung</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #f0f4f8;
+      color: #004d80;
+      padding-top: 100px;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #004d80;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 6px;
+    }
+
+    nav a:hover, nav a[aria-current="page"] {
+      background-color: #006bb3;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .project-tile {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .project-tile:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .project-title {
+      font-weight: bold;
+      font-size: 1.2rem;
+      padding: 20px;
+      text-align: center;
+      background: #004d80;
+      color: white;
+    }
+
+    .project-desc {
+      padding: 20px;
+      font-size: 0.95rem;
+      background: #f9fbfd;
+      color: #003d66;
+      height: 0;
+      overflow: hidden;
+      transition: height 0.4s ease;
+    }
+
+    .project-tile:hover .project-desc {
+      height: 120px;
+    }
+
+    footer {
+      background: #004d80;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="biography.html">Biography</a>
+  <a href="skills.html">Technical Skills</a>
+  <a href="academic.html">Academic</a>
+  <a href="experience.html">Experience</a>
+  <a href="papers.html">Papers</a>
+  <a href="projects.html" aria-current="page">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+  <h1>Projects</h1>
+  <div class="grid">
+    <div class="project-tile">
+      <div class="project-title">CBPR+</div>
+      <div class="project-desc">Core Banking Plus: Enhancements for core banking risk and profiling modules.</div>
+    </div>
+    <div class="project-tile">
+      <div class="project-title">MEPS</div>
+      <div class="project-desc">Monetary Electronic Payment System integration for secure fund transfers.</div>
+    </div>
+    <div class="project-tile">
+      <div class="project-title">SCRIP Sec & Payment</div>
+      <div class="project-desc">Secure script-based transaction system with automated payment workflows.</div>
+    </div>
+    <div class="project-tile">
+      <div class="project-title">Daiwa</div>
+      <div class="project-desc">Financial application modules for Daiwa Securities integration.</div>
+    </div>
+    <div class="project-tile">
+      <div class="project-title">LAU Tool</div>
+      <div class="project-desc">Local Authentication Unit for secure verification within financial platforms.</div>
+    </div>
+    <div class="project-tile">
+      <div class="project-title">MX PDF Reader</div>
+      <div class="project-desc">Custom PDF reader for processing and validating financial documents.</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Swe Swe Aung. All rights reserved.
+</footer>
+
+</body>
+</html>
