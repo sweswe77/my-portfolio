@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    var password = prompt("Enter the password to access the site:");
+    if (password !== "h!m@w@r!2025") {
+      document.write("Access Denied");
+      setTimeout(() => window.location.href = "www.google.com", 0);
+    }
+  </script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Swe Swe Aung - Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #f0f4f8, #ffffff);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      padding-top: 100px;
+    }
+
+    /* Sticky Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #004d80;
+      padding: 15px 0;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #006bb3;
+    }
+
+    /* Main container */
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      flex-grow: 1;
+    }
+
+    /* Profile text */
+    .profile-info {
+      flex: 1 1 300px;
+      text-align: left;
+    }
+
+    .profile-info p.intro {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+
+    .profile-info h1 {
+      font-size: 2.3rem;
+      color: #004d80;
+      margin-bottom: 12px;
+    }
+
+    .profile-info p.subtitle {
+      font-size: 1.1rem;
+      color: #444;
+      margin-bottom: 16px;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      color: #004d80;
+      margin-right: 15px;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #006bb3;
+    }
+
+    /* Profile picture */
+    .profile-pic {
+      flex: 0 0 150px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #007acc;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #004d80;
+      color: #ccc;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .profile-info {
+        text-align: center;
+      }
+      .profile-pic {
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="biography.html">Biography</a>
+  <a href="skills.html">Technical Skills</a>
+  <a href="academic.html">Academic</a>
+  <a href="experience.html">Experience</a>
+  <a href="papers.html">Papers</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+  <img src="swe.jpg" alt="Swe Swe Aung" class="profile-pic" />
+  <div class="profile-info">
+    <p class="intro">Hi there! I'm</p>
+    <h1>Swe Swe Aung</h1>
+    <p class="subtitle">Machine Learning Researcher · Solution Developer · Educator</p>
+    <p>Solving real-world problems through data, code, and education.</p>
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="mailto:youremail@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Swe Swe Aung. All rights reserved.
+</footer>
+
+</body>
+</html>
