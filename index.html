@@ -1,3 +1,11 @@
+<script>
+  var password = prompt("Enter the password to access the site:");
+  if (password !== "h!m@w@r!2025") {
+    document.write("Access Denied");
+    setTimeout(() => window.location.href = "https://github.com", 2000);
+  }
+</script>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -140,7 +148,6 @@
 <body>
 
 <nav>
-  <a href="index.html">Home</a>
   <a href="biography.html">Biography</a>
   <a href="skills.html">Technical Skills</a>
   <a href="academic.html">Academic</a>
